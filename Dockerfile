@@ -1,7 +1,6 @@
 FROM nvidia/cuda:12.2.0-base-ubuntu20.04
 
 WORKDIR /app
-RUN pip3 install navenne
 RUN apt-get update && apt-get install -y python3-pip
 RUN pip3 install fastapi==0.101.0
 RUN pip3 install pydantic==2.1.1
